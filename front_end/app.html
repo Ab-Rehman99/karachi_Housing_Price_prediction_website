@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Realty price prediction</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+     <link
+      href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300"
+      rel="stylesheet"
+    />
+	<link rel="stylesheet" href="app.css">
+
+</head>
+<body>
+
+   
+<div class="container">
+   
+    <h1>Price Prediction</h1>
+    <div class= 'content'>
+        <form class="form">
+            <h2>Area</h2>
+            <input class="area" type="text" id="uiSqft" class="floatLabel" name="Squareft"  placeholder="Please enter area in sqft">
+            <h2>Bedrooms</h2>
+               <select name="uiBed" id="uiBed">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+           
+            </form>
+        <form class="form">
+            <h2>Bath</h2>
+            <select name="uiBathrooms" id="uiBathrooms">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+
+            </select>
+           
+            <h2>Location</h2>
+            <div>
+                
+          <select class="location" name="" id="uiLocations">
+            <option value="" disabled="disabled" selected="selected">Choose a Location</option>
+                
+          </select>
+        </div>
+        
+            <button class="estimate-btn" onclick="onClickedEstimatePrice()" type="button">Estimate Price</button></div>
+            <div id="uiEstimatedPrice" class="result">	<h2>3214</h2> </div>
+        </div>
+
+</body>
+</html>
